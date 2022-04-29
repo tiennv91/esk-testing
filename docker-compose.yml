@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  eks-testing-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aws_k8s/eks_testing
+    ports:
+      - 3002:3000
