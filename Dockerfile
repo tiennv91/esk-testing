@@ -18,4 +18,4 @@ RUN bundle install
 EXPOSE 3000
 
 # Start app server.
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "3000"]
+CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
